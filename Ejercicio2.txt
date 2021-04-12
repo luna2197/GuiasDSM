@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] ar) {
+    Scanner teclado = new Scanner(System.in); 
+ int contador, f, valor, resta; 
+
+ contador=0; 
+ for (f = 1; f <= 10; f++) { 
+ System.out.print("Ingrese valor:"); 
+ valor = teclado.nextInt(); 
+ if(valor>= 7){
+ contador++;
+ } 
+ } 
+
+ System.out.print("los alumnos de notas mayores o iguales a 7: "); 
+ System.out.println(contador);
+ resta = 10-contador;
+ System.out.print("los alumnos menores a 7: "); 
+ System.out.println(resta);
+    
+  }
+}

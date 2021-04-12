@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+class Main {
+ 
+   public static void main(String[] ar) { 
+ Scanner teclado = new Scanner(System.in); 
+ int  valor, par, impar; 
+ par = 0; 
+ impar = 0; 
+ do { 
+ System.out.print("Ingrese un numero entero (0 para finalizar):"); 
+ valor = teclado.nextInt(); 
+ if (valor != 0) {
+   if(valor%2==0){
+     par++;
+   }
+   else{
+   impar++;
+ }  
+  
+ } 
+ 
+ } while (valor != 0); 
+  
+  System.out.print("Los numeros pares son: ");
+  System.out.print(par);
+  System.out.print("\nLos numeros impares son: ");
+  System.out.print(impar);
+
+ } 
+
+  
+}
